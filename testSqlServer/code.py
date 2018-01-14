@@ -10,3 +10,8 @@ def str2bin(strText):
 def getCode(strText, codec):
     b = bytes((ord(i) for i in strText))
     return b.decode(codec)
+
+#GBK专用
+def c(strText):
+    b = bytes((ord(i) for i in strText))
+    return b.decode("GBK")
